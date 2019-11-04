@@ -4,7 +4,7 @@ import { Share } from 'react-native';
 export const handleShare = async (item) => {
     try {
       let message;
-      if(item.image){
+      if(item.backdrop_path){
          message =  item.title + '\n' + '\n'
         + item.overview + '\n' + '\n' 
         + IMAGE_URL + 'w500/' + item.backdrop_path 

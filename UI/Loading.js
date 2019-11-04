@@ -2,15 +2,15 @@ import React from 'react';
 import {
     ActivityIndicator,
     StyleSheet,
-    Text,
     View,
   } from 'react-native'
+  import { colors } from "../shared/colors";
 
 
 export const Loading = () => {
     return(
         <View style={styles.loading}>
-          <ActivityIndicator size='large' color='#e3b04b' />
+          <ActivityIndicator size='large' color={colors.primaryNonDark} />
         </View>
     );
 };
@@ -24,6 +24,6 @@ const styles = StyleSheet.create({
     bottom: 0,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#F5FCFF88',
+    backgroundColor: colors.overlay,
   }
 });
