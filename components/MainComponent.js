@@ -55,7 +55,7 @@ const BottomNavigation = createAppContainer(App);
 class Main extends Component {
   render() {
     return (
-      <View style={{ flex: 1}}>
+      <View style={{ flex: 1, paddingTop: Platform.OS === 'ios' ? 30 : StatusBar.currentHeight * 0 }}>
         <GeneralStatusBarColor backgroundColor={colors.primaryDark}
         barStyle="light-content"/>
         <BottomNavigation />
