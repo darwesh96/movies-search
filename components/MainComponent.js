@@ -7,7 +7,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 import Ionicons from 'react-native-vector-icons/FontAwesome';
 import { colors } from "../shared/colors";
-
+import GeneralStatusBarColor from '../UI/statusbar/GeneralStatusBarColor';
 // Stack navigation routes for Search Screen
 const SearchStack = createStackNavigator(
   {
@@ -56,6 +56,8 @@ class Main extends Component {
   render() {
     return (
       <View style={{ flex: 1}}>
+        <GeneralStatusBarColor backgroundColor={colors.primaryDark}
+        barStyle="light-content"/>
         <BottomNavigation />
       </View>
     );
