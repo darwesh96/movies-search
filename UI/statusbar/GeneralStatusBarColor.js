@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
     });
 const GeneralStatusBarColor = (props) => (
     <View style={[styles.statusBar, { backgroundColor: props.backgroundColor }]}>
-    <StatusBar translucent backgroundColor={props.backgroundColor}/>
+    <StatusBar barStyle={props.barStyle} backgroundColor={props.backgroundColor}/>
     </View>
     );
 export default GeneralStatusBarColor;

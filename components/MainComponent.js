@@ -57,7 +57,7 @@ class Main extends Component {
     return (
       <View style={{ flex: 1, paddingTop: Platform.OS === 'ios' ? 30 : StatusBar.currentHeight * 0 }}>
         <GeneralStatusBarColor backgroundColor={colors.primaryDark}
-        barStyle="light-content"/>
+        barStyle={'light-content'}/>
         <BottomNavigation />
       </View>
     );
