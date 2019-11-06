@@ -82,7 +82,7 @@ export default class Fav extends Component {
     }
 
     render() {
-        const { movies, width, isLoading } = this.state;
+        const { movies, isLoading } = this.state;
 
         const renderItem = ({ item, index }) => {
             return (
