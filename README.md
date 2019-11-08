@@ -1,5 +1,4 @@
 # movies-search
-React Native application that searches for movies then the user can favorite some of them to be added in a separate list.
 
 * This is a React Native app.
 
